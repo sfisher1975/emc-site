@@ -4,44 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Essential Maintenance & Controls</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
-    header { background-color: #003366; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
-    .hero { background-color: #ffffff; padding: 60px 20px; text-align: center; }
-    .hero h1 { color: #003366; }
-    .cta-button { background-color: #b30000; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; }
-    .section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    .section h2 { color: #003366; }
-    .service { background-color: #fff; border-left: 5px solid #b30000; padding: 15px; margin-bottom: 20px; }
-    .contact { background-color: #003366; color: white; padding: 40px 20px; }
-    .contact a { color: #ffcccb; text-decoration: none; }
-    .contact-form {
-      background: white;
-      color: black;
-      padding: 20px;
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #e0e0e0;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b30000;
+    }
+    .hero {
+      background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+    .cta-button {
+      background-color: #b30000;
+      color: white;
+      padding: 14px 28px;
+      border: none;
       border-radius: 6px;
-      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .service {
+      background-color: #1f1f1f;
+      border-left: 4px solid #b30000;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    .contact {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 60px 20px;
+    }
+    .contact a {
+      color: #ff7b7b;
+      text-decoration: none;
+    }
+    .contact-form {
+      background: #2c2c2c;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
     .contact-form input,
     .contact-form textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 10px;
       margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
+      border: 1px solid #555;
+      border-radius: 6px;
+      background-color: #1a1a1a;
+      color: white;
     }
     .contact-form button {
       background-color: #b30000;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
     }
     .qr {
@@ -51,16 +111,19 @@
     .qr img {
       width: 120px;
     }
+    .logo {
+      height: 80px;
+    }
   </style>
 </head>
 <body>
-  <header style="background-color: #003366; color: white; padding: 20px; text-align: center;">
-  <img src="logo.png" alt="Essential Maintenance & Controls" style="height: 130px; object-fit: contain;">
-  <nav style="margin-top: 15px;">
-    <a href="#services" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Services</a>
-    <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
-  </nav>
-</header>
+  <header>
+    <img src="logo.png" alt="Essential Maintenance & Controls" class="logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <div class="hero">
     <h1>Get Your Machines Running — Without Hiring a Full-Time Tech</h1>
