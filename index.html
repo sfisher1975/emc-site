@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential Maintenance & Controls</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+    header { background-color: #003366; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    .hero { background-color: #ffffff; padding: 60px 20px; text-align: center; }
+    .hero h1 { color: #003366; }
+    .cta-button { background-color: #b30000; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; }
+    .section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .section h2 { color: #003366; }
+    .service { background-color: #fff; border-left: 5px solid #b30000; padding: 15px; margin-bottom: 20px; }
+    .contact { background-color: #003366; color: white; padding: 40px 20px; }
+    .contact a { color: #ffcccb; text-decoration: none; }
+    .contact-form { background: white; color: black; padding: 20px; border-radius: 6px; margin-top: 20px; max-width: 600px; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; }
+    .contact-form button { background-color: #b30000; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    .qr { margin-top: 30px; text-align: center; }
+    .qr img { width: 120px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EMC</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Get Your Machines Running — Without Hiring a Full-Time Tech</h1>
+    <p>Reliable on-call support for your shop's control systems.</p>
+    <button class="cta-button" onclick="window.location='#contact'">Book Free Checkup</button>
+  </div>
+
+  <div class="section" id="services">
+    <h2>What We Do</h2>
+    <div class="service">
+      <h3>Troubleshooting & Repair</h3>
+      <p>Fast response when machines go down. Experts in Allen-Bradley, Siemens, Red Lion, and more.</p>
+    </div>
+    <div class="service">
+      <h3>HMI & PLC Services</h3>
+      <p>Reprogramming, backups, and screen restoration for clear machine control.</p>
+    </div>
+    <div class="service">
+      <h3>Control Panel Modernization</h3>
+      <p>Upgrade old systems with new, safe, and reliable hardware.</p>
+    </div>
+    <div class="service">
+      <h3>Preventive Maintenance</h3>
+      <p>Routine inspections, backups, and cleanups to reduce downtime risk.</p>
+    </div>
+    <div class="service">
+      <h3>Dashboards & Remote Monitoring</h3>
+      <p>Live machine data and alerts viewable from your phone or computer.</p>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:4128530251">412-853-0251</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sfisher1975@gmail.com">sfisher1975@gmail.com</a></p>
+    <p><strong>Website:</strong> www.emc.com</p>
+    <p><strong>Contact:</strong> Shannon Fisher</p>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="mailto:sfisher1975@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="qr">
+      <p>Scan to Contact Us</p>
+      <img src="emc_qr.png" alt="QR Code">
+    </div>
+  </div>
+</body>
+</html>
