@@ -3,81 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Essential Maintenance & Controls</title>
+  <title>Essential Maintenance & Controls | Industrial Control Services</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="PLC & HMI troubleshooting, control panel upgrades, and remote monitoring for small shops. Serving businesses without a full-time controls tech.">
+  <meta name="keywords" content="PLC support, industrial automation, control systems, HMI repair, Allen-Bradley, Siemens, remote monitoring, machine troubleshooting">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Essential Maintenance & Controls">
+  <meta property="og:description" content="Expert support for shops without a full-time controls tech. From troubleshooting to remote dashboards, we keep your machines running.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.emc-controls.com">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #121212;
       color: #e0e0e0;
-      padding: 40px 20px;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #e0e0e0;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b30000;
+    }
+    .hero {
+      background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+      padding: 80px 20px;
       text-align: center;
     }
-    h1 {
-      color: white;
+    .hero h1 {
+      font-size: 2.5em;
+      color: #ffffff;
     }
-    .form-container {
-      background-color: #1f1f1f;
-      padding: 40px;
-      max-width: 600px;
-      margin: 40px auto;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      text-align: left;
-      margin-top: 15px;
-      margin-bottom: 5px;
-    }
-    input,
-    textarea {
-      padding: 12px;
-      border: 1px solid #444;
-      border-radius: 6px;
-      background-color: #1a1a1a;
-      color: white;
-    }
-    button {
-      margin-top: 20px;
+    .cta-button {
       background-color: #b30000;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       border: none;
       border-radius: 6px;
       font-size: 16px;
       cursor: pointer;
-    }
-    a {
-      color: #ff7b7b;
-      text-decoration: none;
-    }
-    .back-link {
       margin-top: 30px;
+      text-decoration: none;
       display: inline-block;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .service {
+      background-color: #1f1f1f;
+      border-left: 4px solid #b30000;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    .logo {
+      height: 140px;
     }
   </style>
 </head>
 <body>
-  <h1>Book Your Free Checkup</h1>
-  <div class="form-container">
-    <form action="https://formspree.io/f/xovdynql" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+  <header>
+    <img src="logo.png" alt="Essential Maintenance & Controls" class="logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="_replyto" required>
+  <div class="hero">
+    <h1>Get Your Machines Running — Without Hiring a Full-Time Tech</h1>
+    <p>Reliable support for your shop's control systems.</p>
+    <a href="contact.html" class="cta-button">Book Free Checkup</a>
+  </div>
 
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-    <a href="index.html" class="back-link">← Back to Home</a>
+  <div class="section" id="services">
+    <h2>What We Do</h2>
+    <div class="service">
+      <h3>Troubleshooting & Repair</h3>
+      <p>
+        Fast, reliable diagnostics when your machines fail — no guesswork, just solutions.
+        We handle electrical faults, sensor errors, control failures, and HMI issues with precision.
+        Experienced with Allen-Bradley, Siemens, Red Lion, and other leading platforms.
+      </p>
+    </div>
+    <div class="service">
+      <h3>HMI & PLC Services</h3>
+      <p>
+        We restore and optimize your machine control systems. From touchscreen HMIs to PLC logic, we offer reprogramming, troubleshooting, backups, and complete screen recovery. Whether it’s a faulted program or a corrupted display, we’ll get you back online fast.
+      </p>
+    </div>
+    <div class="service">
+      <h3>Control Panel Modernization</h3>
+      <p>
+        Outdated panel? We’ll upgrade your system with modern, code-compliant hardware built for safety, serviceability, and performance. Clean layouts, proper labeling, and full documentation included with every job.
+      </p>
+    </div>
+    <div class="service">
+      <h3>Preventive Maintenance</h3>
+      <p>
+        Reduce unplanned downtime with regular inspections, PLC backups, battery checks, and cleanup of control cabinets. We identify problems before they stop production — keeping your shop running smoothly.
+      </p>
+    </div>
+    <div class="service">
+      <h3>Dashboards & Remote Monitoring</h3>
+      <p>
+        See your equipment data in real time — anytime, anywhere. We build custom dashboards with live metrics, alert notifications, and remote access from your phone or PC. Ideal for owners, supervisors, and maintenance leads.
+      </p>
+    </div>
   </div>
 </body>
 </html>
