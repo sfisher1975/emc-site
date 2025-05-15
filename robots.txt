@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sfisher1975.github.io/emc-site/sitemap.xml
